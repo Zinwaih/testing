@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .title {
+            color:#3d5af1;
+        }
+        /* Child selector */
+        .title span {
+            color: #222;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        /* tr { */
+            /* border-bottom: 1px solid black; */
+        /* } */
+        th,td {
+            border: 2px solid black;
+            padding: 10px 15px;
+        }
+        thead {
+            background-color: #3d5af1;
+            color: #fff;
+        }
+        thead th {
+            text-align: left;
+        }
+        tbody tr:hover {
+            background-color: #eee;
+        }
+        tbody tr td:first-child {
+            background-color: #3d5af160;
+            color:white;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .total {
+            background-color: rgb(255, 255, 255) !important;
+            color: black !important;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+        <h4 class="title">Table <span>CSS</span></h4>
+    <hr>
+         <table>
+             <thead>
+                 <tr>
+                    <th>#</th>
+                    <th>Course</th>
+                    <th class="text-right">Fee</th>
+                    <th class="text-right">Discount</th>
+                    <th class="text-right">Cost</th>
+                 </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>BWD(Basic Web Design)</td>
+                    <td class="text-right">20000</td>
+                    <td class="text-right">100%</td>
+                    <td class="text-right">0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SWD(Special Web Design)</td>
+                    <td class="text-right">100000</td>
+                    <td class="text-right">80%</td>
+                    <td class="text-right">20000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Web Dev(Web Development)</td>
+                    <td class="text-right">100000</td>
+                    <td class="text-right">50%</td>
+                    <td class="text-right">50000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Laraval(Laraval Framework)</td>
+                    <td class="text-right">100000</td>
+                    <td class="text-right">50%</td>
+                    <td class="text-right">50000</td>
+                </tr>
+                <tr>
+                    <td class="total" colspan="4">Total</td>
+                    <td>120000</td>
+                </tr>
+             </tbody>
+         </table>
+
+</body>
+</html>
