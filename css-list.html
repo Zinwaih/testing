@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;1,100&family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+        .list-one {
+            list-style-type: square;
+        }
+        .list-two {
+            border: 1px solid black;
+            list-style-type: none;
+            width: 200px;
+            padding: 5px;
+        }
+        .list-two li {
+            border: 1px solid black;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .list-two li:last-child {
+            margin-bottom: 0;
+        }
+        .list-three {
+            border: 1px solid black;
+            list-style-type: none;
+            /* width: 200px; */
+            padding: 5px;
+            text-align: center;
+        }
+        .list-three li {
+            border: 1px solid black;
+            padding: 10px 51px;
+            /* margin-bottom: 5px; */
+            /* text-align: center; */
+            /* width: 200px; */
+            display: inline-block;
+            /* margin: 0 10px */
+            transition: 0.5s;
+        }
+        .list-three li:last-child {
+            margin-bottom: 0;
+        }
+        .list-three li:hover,.list-three li.active {
+            background-color: black;
+            color: white;
+        }
+        .list-four {
+            padding: 0;
+            list-style-type: none;
+        }
+        .list-four li {
+            background-color: #d0d0d0;
+            color: black;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            width: 200px;
+            font-weight: bold;
+            border-left: 2px solid black;
+            transition: 0.5s;
+            box-sizing: border-box;
+        }
+        .list-four li:hover,.list-four li.active2 {
+            border-left: 8px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list-one">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Stawberry</li>
+    </ul>
+
+    <ul class="list-two">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Stawberry</li>
+    </ul>
+
+    <ul class="list-three">
+        <li class="active">Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Stawberry</li>
+    </ul>
+
+    <ul class="list-four">
+        <li class="active2">Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Stawberry</li>
+    </ul>
+</body>
+</html>
