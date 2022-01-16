@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        form {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        * {
+            font-family: 'Dongle', sans-serif;
+            color: #fff591;
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        body {
+            background-color: #ff8b5d;
+        }
+        .login-form {
+            width: 350px;
+            height: 500px;
+            border: 2px solid #feb062;
+            border-radius: 20px;
+            padding: 20px 30px;
+            background-color: hsl(27, 100%, 77%);
+        }
+        .login-form legend {
+            width: 200px;
+            text-align: center;
+            font-size: 3em;
+            text-transform: uppercase;
+            border-top: 2px solid #feb062;
+            border-radius: 20px;
+            background-color: hsl(27, 100%, 77%);
+        }
+        .form-input  {
+            margin-bottom: 20px;
+        }
+        .form-input label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-input input {
+            display: block;
+            width: 100%;
+            border: 1px solid #feb062;
+            border-radius: 20px;
+            padding: 5px 10px;
+            color: black;
+            font-size: large;
+        }
+        .btn {
+            border: 2px solid #feb062;
+            border-radius: 10px;
+            padding: 5px 10px;
+            background-color: white;
+            color: black;
+            margin-right: 10px;
+        }
+        .text-light {
+            color: #000000;
+        }
+        .icon {
+            color: #3f3b3b;
+        }
+        .link:hover{
+            text-decoration: none;
+            color: blueviolet;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset class="login-form">
+            <legend class="text-light">
+                <i class="fas fa-unlock-alt icon fa-fw"></i>
+                Log in 
+            </legend>
+           
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-user icon fa-fw"></i>User Name
+                </label>
+                <input type="text" name="" required>
+            </div>
+
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-key icon fa-fw"></i>Password
+                </label>
+                <input type="password" name="" required>
+            </div>
+
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-key icon fa-fw"></i>Password Confirmed
+                </label>
+                <input type="password" name="" required>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="fas fa-lock-open icon fa-fw"></i>Login
+            </button>
+            <a  class="link" href="https://www.google.com">Register Account</a>
+        </fieldset>
+    </form>
+</body>
+</html>
